@@ -6,8 +6,8 @@
 
 .topic-properties{
 	letter-spacing: 0.5em;
-	margin-top: 5em;
-	font-size: 2.5rem;
+	margin: 5em auto 0px;
+	font-size: 2.5em;
 	text-transform: uppercase;
 }
 
@@ -26,7 +26,7 @@
 .about-us-head::after {
 	content: '';
 	height: 2px;
-	width: 7rem;
+	width: 7em;
 	margin: .75em 0px 3em;
 	background-color: orange;
 }
@@ -57,13 +57,13 @@
 }
 .about-us-name{
 	display: flex;
-	font-size: 1.7rem;
+	font-size: 1.7em;
 	flex-direction: column;
 }
 .about-us-name::after{
 	content: '';
 	height: 1px;
-	width: 7rem;
+	width: 7em;
 	margin: .5em 0px .5em;
 	background-color: orange;
 }
@@ -81,6 +81,7 @@
 @media  (max-width: 768px){
 	.about-us-div{
 		flex-direction: column;
+		font-size: 25px;
 	}
 	.about-us-img{
 		width: 100%;
