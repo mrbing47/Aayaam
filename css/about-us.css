@@ -49,6 +49,7 @@
 .about-us-body{
 	text-align: left;
 	text-overflow: wrap;
+	line-height: 1.75em;
 }
 
 .about-us-img{
@@ -57,13 +58,13 @@
 }
 .about-us-name{
 	display: flex;
-	font-size: 1.7em;
+	font-size: 2em;
 	flex-direction: column;
 }
 .about-us-name::after{
 	content: '';
 	height: 1px;
-	width: 7em;
+	width: 5em;
 	margin: .5em 0px .5em;
 	background-color: orange;
 }
