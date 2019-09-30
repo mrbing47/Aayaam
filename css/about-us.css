@@ -81,7 +81,6 @@
 @media  (max-width: 768px){
 	.about-us-div{
 		flex-direction: column;
-		font-size: 25px;
 	}
 	.about-us-img{
 		width: 100%;
@@ -94,5 +93,8 @@
 	}
 	.about-us-name{
 		align-items: center;
+	}
+	body{
+		font-size: 10px;
 	}
 }
