@@ -1,0 +1,97 @@
+.admin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.admin-card-row{
+    display: flex;
+    /* background-color: aqua;  */
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0px 0px 2em;
+}
+.admin-cards::before{
+    content: '';
+    position: absolute;
+    background-color: grey;
+    z-index: 10;
+    transition: all ease-out 350ms;
+}
+.admin-cards{
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.admin-cards:hover::before{
+    visibility: visible;
+}
+.admin-cards:hover .admin-body{
+    transform: translateY(0%);
+}
+.admin-cards:hover .admin-img{
+    transform: scale(1.1);
+}
+.admin-img{
+    width: 100%;
+    transform: scale(1);
+    margin: 0px;
+    transition: transform ease-in 300ms;
+    z-index: 0;
+}
+
+
+.admin-body{
+    padding: 2em;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-overflow: wrap;
+    transform: translateY(100%);
+    transition: transform ease-in 350ms;
+    z-index: 2;
+}
+
+.admin-name{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    align-items: center;
+}
+.admin-name::after{
+    content: '';
+    height: 1px;
+    width: 1rem;
+    background-color: aliceblue;
+    margin: 0.5em 0px;
+}
+
+.admin-post{
+    letter-spacing: .25em;
+    font-size: 1.25em;
+}
+
+@media (max-width: 768px){
+    .admin-card-row{
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+        margin: 0%;
+    }
+    .admin{
+        align-items: center;
+    }
+    .admin-cards{
+        width: 100%;
+        margin: 0px 0px 2em;
+    }
+    .admin{
+        font-size: 20px;
+    }
+}
