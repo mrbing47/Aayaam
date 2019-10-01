@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+body{
+	margin: 0%;
+	background-color: #1c1c1d;
+}
+
 .topic-properties{
 	letter-spacing: 0.5em;
 	margin: 5em auto 0px;
@@ -19,6 +24,7 @@
 .about-us-head {
 	width: 100%;
 	display: flex;
+	color: white;
 	flex-direction: column;
 	align-items: center;
 }
@@ -37,12 +43,13 @@
 	flex-direction: row;
 	align-items: center;
 	width: 75%;
-	background-color:beige;
+	background-color:rgb(200, 146, 0);
 	justify-content: space- space-around;
 	border-radius: 5px;
 	overflow: hidden;
 	padding: 8px;
 	max-width: 2000px;
+	color: white;
 	box-shadow: 2px 2px 5px 2px rgba(0,0,150,0.2);
 }
 
@@ -64,7 +71,8 @@
 .about-us-body{
 	text-align: left;
 	text-overflow: wrap;
-	line-height: 1.75em;
+	font-size: 1.25em;
+	line-height: 1.5em;
 }
 
 .about-us-name{
@@ -90,7 +98,8 @@
 }
 
 .skill-cards{
-	background-color: beige;
+	color: white;
+	background-color: rgb(200, 146, 0);
 	width: 30%;
 	margin: 1em;
 	border-radius: 5px;

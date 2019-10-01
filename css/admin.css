@@ -69,9 +69,11 @@
     border-radius: 50%;
     width: 100%;
     height: 100%;
+    border: 2px solid orange;
+}
+.admin-card-front{
     padding: 1em;
 }
-
 .admin-card-back {
 	position: absolute;
     top:0;
@@ -82,22 +84,18 @@
 }
 
 .admin-card-back {
-	background-color: grey;
+	background-color: rgb(200, 146, 0);
 	color: white;
 	transform: rotateY(180deg);
 	text-overflow: wrap;
-	padding: 2em;
+    padding: 2em;
 }
 
 @media (max-width: 768px) {
 	.admin-card-row {
 		flex-direction: column;
-		align-items: center;
-		width: 75%;
+		align-items: cente
 		margin: 0%;
-	}
-	.admin {
-		align-items: center;
 	}
 	.admin-card {
         width: 75vw;
