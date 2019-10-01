@@ -139,12 +139,11 @@
 	body{
 		font-size: 10px;
 	}
-	/*.skills{
+	.skills{
 		flex-direction: column;
 		width: 75%;
 		margin: 0px auto;
 		align-items: center;
-		background-color: aqua;
 		justify-content: center;
 	}
 	.sc-1{
@@ -152,5 +151,9 @@
 	}
 	.sc-3{
 		margin-right: 0px;
-	}*/
+	}
+	.skill-cards{
+		width: 100%;
+		margin: 1em;
+	}
 }

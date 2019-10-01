@@ -20,6 +20,8 @@
     background-color: grey;
     margin: 0px;
     opacity: 1;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 
