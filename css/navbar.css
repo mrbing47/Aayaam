@@ -47,14 +47,17 @@
 	color: black;
 	padding: 0.75em;
 	display: flex;
-	flex-direction: column;
+    flex-direction: column;
+    font-size: 1.25em;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 100;
 }
 
 .register-btn {
 	background-color: orange;
 	text-decoration: none;
 	padding: 0.75em;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	color: white;
 	border-radius: 10%;
 }
@@ -106,6 +109,7 @@
 
 
 	.navbar-items {
+        font-family: 'Luckiest Guy', cursive;
 		margin: 0px;
         padding: 0px;
         font-size: 1.5em;

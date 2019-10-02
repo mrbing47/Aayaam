@@ -26,7 +26,6 @@ window.onload = () => {
 	navbar_items.forEach(function(navbar_item) {
 		navbar_item.addEventListener('click', function() {
 			toggle_bar.checked = false;
-		
 		});
 	});
 	

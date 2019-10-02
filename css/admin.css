@@ -17,6 +17,7 @@
 }
 
 .admin-name {
+	font-family: 'Mansalva', cursive;
 	display: flex;
 	flex-direction: column;
 	font-size: 1.75em;
@@ -31,13 +32,17 @@
 }
 
 .admin-content {
-	margin-top: 2em;
+	margin-top: 1em;
+	font-size: 1.5em;
+	font-weight: 700;
 	line-height: 1.7em;
+	font-family: 'Indie Flower', cursive;
 }
 
 .admin-post {
 	letter-spacing: 0.25em;
-	font-size: 1.25em;
+	font-size: 1.5em;
+	font-family: 'Bangers', cursive;
 	margin: 0%;
 	text-transform: uppercase;
 }
@@ -84,7 +89,8 @@
 }
 
 .admin-card-back {
-	background-color: rgb(200, 146, 0);
+	/*background-color: rgb(200, 146, 0);*/
+	background-color: rgb(231, 170, 3);
 	color: white;
 	transform: rotateY(180deg);
 	text-overflow: wrap;
