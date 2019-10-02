@@ -88,11 +88,11 @@
         background-color: white;
         color: black;
     }
-	.navbar ul {
+	.navbar ul{
 		margin: 0px;
 		position: absolute;
 		display: block;
-		top: 99%;
+        top: 99%;
 		background-color: white;
 		width: 100%;
 		transform: scale(1, 0);
@@ -115,7 +115,7 @@
         display: inline;
 		position: absolute;
 		top: 35%;
-		left: 9px;
+		left: 1.5%;
         margin-left: 5%;
         border: 1.5px solid black;
         padding: 10px 6px;
