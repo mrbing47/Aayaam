@@ -62,7 +62,7 @@
 	border-radius: 10%;
 }
 
-/*.navbar-items:focus,*/
+.navbar-items:focus,
 .navbar-items:hover {
 	background-color: orangered;
 	color: white;
@@ -70,7 +70,7 @@
 	border-radius: 10%;
 }
 
-/*#register-btn:focus,*/
+#register-btn:focus,
 #register-btn:hover {
 	background-color: blue;
 	outline: none;
