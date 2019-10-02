@@ -1,4 +1,4 @@
-window.onload=()=>{
+window.onload = () => {
 	const navbar = document.querySelector('.navbar');
 	const intro_img = document.querySelector('.intro-div');
 
@@ -8,15 +8,15 @@ window.onload=()=>{
 
 	const observer = new IntersectionObserver(function(entries, observer) {
 		entries.forEach(entry => {
-			if(!entry.isIntersecting){
-            navbar.classList.add("navbar-scrolled");
-        }
-        else{
-            navbar.classList.remove("navbar-scrolled");
-        }
-			console.log(entry.target);
+			if (entry.rootBounds.width > 768) {
+				if (!entry.isIntersecting) {
+					navbar.classList.add('navbar-scrolled');
+				} else {
+					navbar.classList.remove('navbar-scrolled');
+				}
+			}
 		});
 	}, options);
 
 	observer.observe(intro_img);
-}
+};

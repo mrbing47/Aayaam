@@ -94,7 +94,7 @@
 @media (max-width: 768px) {
 	.admin-card-row {
 		flex-direction: column;
-		align-items: cente
+		align-items: center;
 		margin: 0%;
 	}
 	.admin-card {
