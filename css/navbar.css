@@ -98,7 +98,11 @@
 		transform: scale(1, 0);
 		transform-origin: top;
 		transition: transform ease-in-out 200ms;
-	}
+    }
+
+    .navbar-items:active .navbar-list{
+        transform: scale(1,0);
+    }
 
 
 	.navbar-items {

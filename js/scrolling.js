@@ -19,4 +19,15 @@ window.onload = () => {
 	}, options);
 
 	observer.observe(intro_img);
+
+	const navbar_items = document.querySelectorAll('.navbar-items');
+	const toggle_bar = document.querySelector('.toggle-bar');
+	
+	navbar_items.forEach(function(navbar_item) {
+		navbar_item.addEventListener('click', function() {
+			toggle_bar.checked = false;
+		
+		});
+	});
+	
 };
