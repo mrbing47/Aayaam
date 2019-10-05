@@ -1,55 +1,13 @@
-*,
-*::after,
-*::before {
-	box-sizing: border-box;
-}
-
-:root{
-	scroll-behavior: smooth;
-	--back-col: rgb(231, 170, 3);
-}
-
-body{
-	margin: 0%;
-	background-color: #1c1c1d;
-}
-
-.topic-properties{
-	font-family: 'Luckiest Guy', cursive;
-	letter-spacing: 0.5em;
-	margin: 5em auto 0px;
-	font-size: 2.5em;
-	text-transform: uppercase;
-}
-
 .intro-img {
 	width: 100%;
 	height: 100vh;
 }
-
-.topic-head {
-	width: 100%;
-	display: flex;
-	color: white;
-	flex-direction: column;
-	align-items: center;
-}
-
-.topic-head::after {
-	content: '';
-	height: 2px;
-	width: 7em;
-	margin: .75em 0px 3em;
-	background-color: orange;
-}
-
 .about-us-div{
 	margin: 0px auto 2em;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	width: 75%;
-	/* background-color:rgb(200, 146, 0); */
 	background-color: var(--back-col);
 	justify-content: space- space-around;
 	border-radius: 5px;
@@ -151,6 +109,7 @@ body{
 }
 .skill-content{
 	font-family: 'Carter One', cursive;
+	width: 100%;
 }
 
 

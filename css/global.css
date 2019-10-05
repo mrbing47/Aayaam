@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+:root{
+	scroll-behavior: smooth;
+	--back-col: rgb(231, 170, 3);
+}
+
+body{
+	margin: 0%;
+	background-color: #1c1c1d;
+}
+
+.topic-properties{
+	font-family: 'Luckiest Guy', cursive;
+	letter-spacing: 0.5em;
+	margin: 5em auto 0px;
+	font-size: 2.5em;
+	text-transform: uppercase;
+}
+.topic-head {
+	width: 100%;
+	display: flex;
+	color: white;
+	flex-direction: column;
+	align-items: center;
+}
+
+.topic-head::after {
+	content: '';
+	height: 2px;
+	width: 7em;
+	margin: .75em 0px 3em;
+	background-color: orange;
+}
+
+*:focus{
+    outline: none;
+}
