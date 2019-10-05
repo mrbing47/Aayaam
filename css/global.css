@@ -6,12 +6,13 @@
 
 :root{
 	scroll-behavior: smooth;
-	--back-col: rgb(231, 170, 3);
+	--accent-col: rgb(231, 170, 3);
+	--back-col: #1c1c1d;
 }
 
 body{
 	margin: 0%;
-	background-color: #1c1c1d;
+	background-color: var(--back-col);
 }
 
 .topic-properties{
