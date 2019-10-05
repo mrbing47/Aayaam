@@ -6,6 +6,7 @@
 
 :root{
 	scroll-behavior: smooth;
+	--back-col: rgb(231, 170, 3);
 }
 
 body{
@@ -26,7 +27,7 @@ body{
 	height: 100vh;
 }
 
-.about-us-head {
+.topic-head {
 	width: 100%;
 	display: flex;
 	color: white;
@@ -34,7 +35,7 @@ body{
 	align-items: center;
 }
 
-.about-us-head::after {
+.topic-head::after {
 	content: '';
 	height: 2px;
 	width: 7em;
@@ -49,7 +50,7 @@ body{
 	align-items: center;
 	width: 75%;
 	/* background-color:rgb(200, 146, 0); */
-	background-color: rgb(231, 170, 3);
+	background-color: var(--back-col);
 	justify-content: space- space-around;
 	border-radius: 5px;
 	overflow: hidden;
@@ -57,6 +58,14 @@ body{
 	max-width: 2000px;
 	color: white;
 	box-shadow: 2px 2px 5px 2px rgba(0,0,150,0.2);
+	transform: translateX(-30%);
+	opacity: 0;
+	transition: all ease-in-out 750ms;
+}
+
+.about-us-scrolled{
+	transform: translateX(0vw);
+	opacity: 1;
 }
 
 .about-us-img{
@@ -110,7 +119,7 @@ body{
 
 .skill-cards{
 	color: white;
-	background-color: rgb(231, 170, 3);
+	background-color: var(--back-col);
 	width: 30%;
 	margin: 1em;
 	border-radius: 5px;

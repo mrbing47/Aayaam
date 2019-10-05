@@ -90,11 +90,56 @@
 
 .admin-card-back {
 	/*background-color: rgb(200, 146, 0);*/
-	background-color: rgb(231, 170, 3);
+	background-color: var(--back-col);
 	color: white;
 	transform: rotateY(180deg);
 	text-overflow: wrap;
     padding: 2em;
+}
+
+.social-links{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	/* background-color: aqua; */
+}
+
+.social-links li{
+	display: inline;
+	margin: 0px 0.5em;
+	padding: 0;
+	pointer-events: auto;
+	/* background-color: red; */
+}
+
+.sl-a{
+	z-index: 99;
+}
+
+.favions{
+	color: white;
+}
+
+.favions:focus{
+	outline: none;
+}
+
+.email:hover i{
+	color: red;
+}
+
+.instagram:hover i{
+	color: #C13584;
+}
+
+.linkedin:hover i{
+	color: #0077B5;
+}
+
+.facebook:hover i{
+	color: #3C5A99;
 }
 
 @media (max-width: 768px) {
@@ -107,5 +152,8 @@
         width: 75vw;
         height: 75vw;
 		margin: 0px 0px 2em;
+	}
+	.admin-card-back{
+		font-size: 20px;
 	}
 }

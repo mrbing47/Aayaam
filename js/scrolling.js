@@ -1,12 +1,12 @@
 window.onload = () => {
 	const navbar = document.querySelector('.navbar');
 	const intro_img = document.querySelector('.intro-div');
-
-	const options = {
+	
+	const NavOptions = {
 		rootMargin: '-150px 0px 0px 0px'
 	};
 
-	const observer = new IntersectionObserver(function(entries, observer) {
+	const NavObserver = new IntersectionObserver(function(entries, observer) {
 		entries.forEach(entry => {
 			if (entry.rootBounds.width > 768) {
 				if (!entry.isIntersecting) {
@@ -16,13 +16,37 @@ window.onload = () => {
 				}
 			}
 		});
-	}, options);
+	}, NavOptions);
 
-	observer.observe(intro_img);
+	NavObserver.observe(intro_img);
+
+	
+
+	
+	const about_us = document.querySelector('.about-us-div');
+	const about_head = document.querySelector('.about-head');
+
+	const AboutOptions={
+		rootMargin: '0px 0px -500px 0px'
+	};
+
+	const AboutObserver = new IntersectionObserver(function(entries, oberser){
+		entries.forEach(entry => {
+			if(entry.isIntersecting){
+				about_us.classList.add('about-us-scrolled');
+				console.log('here I\'m');
+			}
+		});
+	}, AboutOptions);
+
+	AboutObserver.observe(about_head);
+
+
+	
 
 	const navbar_items = document.querySelectorAll('.navbar-items');
 	const toggle_bar = document.querySelector('.toggle-bar');
-	
+
 	navbar_items.forEach(function(navbar_item) {
 		navbar_item.addEventListener('click', function() {
 			toggle_bar.checked = false;
