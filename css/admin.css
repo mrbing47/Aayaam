@@ -90,6 +90,7 @@
 	color: white;
 	transform: rotateY(180deg);
 	padding: 2em;
+	border-radius: 20px;
 }
 
 .social-links a{
