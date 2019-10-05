@@ -36,7 +36,7 @@
 	font-size: 1.5em;
 	font-weight: 700;
 	line-height: 1.7em;
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Fugaz One', cursive;
 }
 
 .admin-post {
@@ -90,6 +90,9 @@
 
 .admin-card-back {
 	/*background-color: rgb(200, 146, 0);*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background-color: var(--back-col);
 	color: white;
 	transform: rotateY(180deg);
@@ -154,6 +157,6 @@
 		margin: 0px 0px 2em;
 	}
 	.admin-card-back{
-		font-size: 20px;
+		font-size: 12px;
 	}
 }

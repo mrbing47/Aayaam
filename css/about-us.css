@@ -87,9 +87,9 @@ body{
 	font-family: 'Carter One', cursive;
 	word-spacing: 0.25em;
 	text-align: left;
-	text-overflow: wrap;
 	font-size: 1.25em;
 	line-height: 1.5em;
+	width: 100%;
 }
 
 .about-us-name{
