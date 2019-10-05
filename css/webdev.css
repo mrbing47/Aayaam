@@ -1,0 +1,89 @@
+.web-properties{
+	font-family: 'Luckiest Guy', cursive;
+	letter-spacing: 0.5em;
+	margin: 3em auto 0px;
+	font-size: 2.5em;
+	text-transform: uppercase;
+}
+
+.webdevs{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 75vw;
+	height: 33vw;
+	margin: 0px auto;
+}
+
+
+.webdev-card{
+	width: 25%;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.webdev-img-div{
+	width: 100%;
+	height: 75%;
+}
+
+.webdev-img{
+	height: 100%;
+	width: 100%;
+}
+.webdev-body{
+	color: white;	
+	position: relative;
+	height: 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(231, 170, 3)
+}
+.webdev-name{
+	margin: 25px 0px 0px;
+	font-size: 2em;
+	font-family: 'Mansalva', cursive;
+	padding: 0px 0.25em;
+}
+.webdev-content{
+    font-family: 'Fugaz One', cursive;
+    font-size: 1.25em;
+}
+
+.webdev-links {
+    display: flex;
+    justify-content: center;
+	position: absolute;
+	top: -17.5px;
+	background-color: #1c1c1d;
+	margin: 0;
+	padding: 0.5em;
+	border-radius: 20px;
+}
+
+.webdev-links a{
+	margin: 0px 5px;
+	color: orange;
+	text-decoration: none;
+}
+
+.github:hover, .github:focus{
+	color: #fff;
+}
+
+@media(max-width: 768px){
+    .webdev-body{
+        size: 10px;
+    }
+    .webdevs{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 280vw;
+        margin: 0px auto;
+    }
+    .webdev-card{
+        width: 100%;
+        height: 134vw;
+    }
+}

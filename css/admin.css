@@ -84,16 +84,12 @@
 	bottom: 0;
 	backface-visibility: hidden;
 	display: flex;
+	overflow: hidden;
 	flex-direction: column;
 	background-color: var(--accent-col);
 	color: white;
 	transform: rotateY(180deg);
 	padding: 2em;
-}
-
-.social-links {
-	margin: 0;
-	padding: 0;
 }
 
 .social-links a{
