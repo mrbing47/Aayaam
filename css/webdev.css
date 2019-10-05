@@ -75,7 +75,7 @@
 
 @media(max-width: 768px){
     .webdev-body{
-        size: 15px;
+        font-size: 15px;
     }
     .webdevs{
         flex-direction: column;
