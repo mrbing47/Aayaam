@@ -12,7 +12,7 @@
 	justify-content: space-evenly;
 	width: 75vw;
 	height: 33vw;
-	margin: 0px auto;
+	margin: 0px auto 25px;
 }
 
 
@@ -75,13 +75,13 @@
 
 @media(max-width: 768px){
     .webdev-body{
-        font-size: 15px;
+        font-size: 20px;
     }
     .webdevs{
         flex-direction: column;
         justify-content: space-between;
         height: 280vw;
-        margin: 0px auto;
+        margin: 0px auto 50px;
     }
     .webdev-card{
         width: 100%;
