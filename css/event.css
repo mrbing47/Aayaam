@@ -4,19 +4,16 @@
 	width: 75vw;
 	height: 400px;
 	margin: 0% auto;
-	/* background-color: aqua; */
 	justify-content: center;
 }
 
 .event-card{
-	/* background-color: red; */
 	width: 33%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 }
 .event-card-left{
-	/* background-color: blue; */
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -49,7 +46,6 @@
 
 .event-card-right{
 	height: 100%;
-	/* background-color: olivedrab; */
 	padding: 0.5em;
 }
 
@@ -62,7 +58,7 @@
 }
 
 .event-img{
-	opacity: 0.25;
+	opacity: 0.4;
 	width: 100%;
 	height: 100%;
 }
