@@ -74,9 +74,9 @@
 }
 
 @media(max-width: 768px){
-    .webdev-body{
-        font-size: 20px;
-    }
+    /* .webdev-body{
+    
+    } */
     .webdevs{
         flex-direction: column;
         justify-content: space-between;
