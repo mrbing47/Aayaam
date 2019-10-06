@@ -91,6 +91,18 @@
 	font-size: 1.5em;
 }
 
+#event-1{
+	transform: translateY(-30px);
+}
+
+#event-2{
+	transform: translateY(-20px);
+}
+
+#event-3{
+	transform: scale(1.75) translateY(10px);
+}
+
 @media(max-width: 768px){
 	
 	.events{
@@ -122,8 +134,11 @@
 		border-left: 2px dashed white;
 		border-top: 0px;
 	}
-	.event-img{
-		transform: scale(1.5) translateY(20px);
+	#event-1, #event-2{
+		transform: translateY(10px) scale(1.5);
+	}
+	#event-3{
+		transform: translateY(10px) scale(2.5);
 	}
 }
 
