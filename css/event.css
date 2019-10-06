@@ -122,5 +122,8 @@
 		border-left: 2px dashed white;
 		border-top: 0px;
 	}
+	.event-img{
+		transform: scale(1.5) translateY(20px);
+	}
 }
 
