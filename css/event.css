@@ -73,7 +73,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	transition: opacity ease-in-out 250ms;
+	transition: visibility ease-in-out 250ms;
 }
 .event-details{
 	font-family: 'Josefin Sans', sans-serif;
@@ -101,7 +101,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	opacity: 0;
+	visibility: hidden;
 }
 
 .event-register-btn{
@@ -121,10 +121,10 @@
 
 .card-right:hover .event-register{
 	transition: all ease-in-out 250ms 100ms;
-	opacity: 1;
+	visibility: visible;
 }
 .card-right:hover .event-register + .event-body{
-	opacity: 0;
+	visibility: hidden;
 }
 
 #event-1{
