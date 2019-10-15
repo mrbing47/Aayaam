@@ -15,8 +15,8 @@
 	filter: blur(5px);
     width: 100%;
     height: 100%;
-	opacity: 0.65;
-    background-image: url("/img/join-us-img.jpg");
+	opacity: 0.5;
+    background-image: url("./img/join-us-img.jpg");
     background-position: center;
 }
 
@@ -32,7 +32,7 @@
 .join-us-btn-main{
     font-family: 'Luckiest Guy', cursive;
     font-weight: 100;
-    font-size: 1.75rem;
+    font-size: 1.75em;
     background-color: orange;
 	text-decoration: none;
 	padding: 0.75em;
@@ -46,7 +46,7 @@
 
 .join-us-content {
     margin: 0em 0px 0.5em;
-    font-size: 2.3rem;
+    font-size: 2.3em;
     font-weight: 500;
     word-spacing: 0.25em;
     font-family: 'Bangers', cursive;
@@ -54,6 +54,6 @@
 
 .join-us-text{
     color: orange;
-    font-size: 2.75rem;
+    font-size: 1.25em;
     font-family: 'Luckiest Guy', cursive;
 }
