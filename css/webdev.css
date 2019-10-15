@@ -55,7 +55,7 @@
     justify-content: center;
 	position: absolute;
 	top: -17.5px;
-	background-color: #1c1c1d;
+	background-color: var(--back-col);
 	margin: 0;
 	padding: 0.5em;
     border-radius: 20px;
@@ -70,6 +70,17 @@
 
 .github:hover, .github:focus{
 	color: #fff;
+}
+
+.footer{
+	background-color: var(--accent-col);
+	margin-top: 150px;
+	padding: 2em;
+	color: white;
+	text-align: center;
+	font-size: 1.25em;
+	letter-spacing: 0.2em;
+	font-family: 'Luckiest Guy', cursive;
 }
 
 @media(max-width: 768px){
