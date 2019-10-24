@@ -1,3 +1,4 @@
+//This part is responsible for the animation on the Nav Bar
 const navbar = document.querySelector('.navbar');
 const intro_img = document.querySelector('.intro-div');
 
@@ -19,6 +20,7 @@ const NavObserver = new IntersectionObserver(function(entries, observer) {
 
 NavObserver.observe(intro_img);
 
+//This part is responsible for the animation on the About-Us card
 const about_us = document.querySelector('.about-us-div');
 const about_head = document.querySelector('.about-head');
 
@@ -37,26 +39,27 @@ const AboutObserver = new IntersectionObserver(function(entries, oberser) {
 
 AboutObserver.observe(about_head);
 
-const skillrow = document.querySelector('.events');
-const skills = document.querySelectorAll('.event-card');
+//This part is responsible for the animations on the Event cards
+const eventrow = document.querySelector('.events');
+const events = document.querySelectorAll('.event-card');
 
-SkillOptions = {
+EventOptions = {
 	rootMargin: '0px 0px -350px 0px'
 };
 
-const SkillObserver = new IntersectionObserver(function(entries, observer) {
+const EventObserver = new IntersectionObserver(function(entries, observer) {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
-			skills.forEach(skill => {
-				skill.classList.add('event-card-scrolled');
+			events.forEach(event => {
+				event.classList.add('event-card-scrolled');
 			});
 		}
 	});
-}, SkillOptions);
+}, EventOptions);
 
-SkillObserver.observe(skillrow);
+EventObserver.observe(eventrow);
 
-
+//This part is responsible for the animations on the Admin cards
 const admincards = document.querySelectorAll('.admin-card');
 
 AdminOptions = {
@@ -64,21 +67,18 @@ AdminOptions = {
 };
 
 const AdminObserver = new IntersectionObserver(function(entries, observer) {
-
 	entries.forEach(entry => {
-	
 		if (entry.isIntersecting) {
 			entry.target.classList.add('admin-card-scrolled');
 		}
-
 	});
-
 }, AdminOptions);
 
 admincards.forEach(admincard => {
 	AdminObserver.observe(admincard);
 });
 
+//This part checks whether the user has selected an option and then closes the navbar
 const navbar_items = document.querySelectorAll('.navbar-items');
 const toggle_bar = document.querySelector('.toggle-bar');
 
