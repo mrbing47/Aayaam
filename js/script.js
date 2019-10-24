@@ -37,18 +37,16 @@ const AboutObserver = new IntersectionObserver(function(entries, oberser) {
 
 AboutObserver.observe(about_head);
 
-
 const skillrow = document.querySelector('.events');
 const skills = document.querySelectorAll('.event-card');
 
 SkillOptions = {
-	rootMargin: "0px 0px -350px 0px"
-}
+	rootMargin: '0px 0px -350px 0px'
+};
 
-const SkillObserver = new IntersectionObserver(function(entries, observer){
-
+const SkillObserver = new IntersectionObserver(function(entries, observer) {
 	entries.forEach(entry => {
-		if(entry.isIntersecting){
+		if (entry.isIntersecting) {
 			skills.forEach(skill => {
 				skill.classList.add('event-card-scrolled');
 			});
@@ -57,6 +55,29 @@ const SkillObserver = new IntersectionObserver(function(entries, observer){
 }, SkillOptions);
 
 SkillObserver.observe(skillrow);
+
+
+const admincards = document.querySelectorAll('.admin-card');
+
+AdminOptions = {
+	rootMargin: '0px 0px -100px 0px'
+};
+
+const AdminObserver = new IntersectionObserver(function(entries, observer) {
+
+	entries.forEach(entry => {
+	
+		if (entry.isIntersecting) {
+			entry.target.classList.add('admin-card-scrolled');
+		}
+
+	});
+
+}, AdminOptions);
+
+admincards.forEach(admincard => {
+	AdminObserver.observe(admincard);
+});
 
 const navbar_items = document.querySelectorAll('.navbar-items');
 const toggle_bar = document.querySelector('.toggle-bar');

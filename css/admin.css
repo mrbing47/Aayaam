@@ -46,6 +46,12 @@
 	perspective: 1000px;
 	width: 22.5vw;
 	height: 22.5vw;
+	transform: scale(0);
+	transition: transform 500ms cubic-bezier(1, 0.03, 0.43, 2)
+}
+
+.admin-card-scrolled{
+	transform: scale(1);
 }
 
 .admin-card-inner {
