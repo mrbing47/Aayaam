@@ -37,11 +37,13 @@
 	text-decoration: none;
 	padding: 0.75em;
 	color: white;
-	border-radius: 13px;
+    border-radius: 13px;
+    transition: transform 250ms cubic-bezier(0.31, 0.57, 0.13, 2.98);
 }
 
 .join-us-btn-main:hover{
     background-color: orangered;
+    transform: scale(1.2);
 }
 
 .join-us-content {
