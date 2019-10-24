@@ -12,7 +12,18 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+	transform: translateY(250px);
+	visibility: hidden;
+	opacity: 0;
+	transition: all 500ms ease-out;
 }
+
+.event-card-scrolled{
+	transform: translateY(0px);
+	visibility: visible;
+	opacity: 1;
+}
+
 .event-card-left{
 	display: flex;
 	flex-direction: row;
