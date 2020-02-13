@@ -1,13 +1,13 @@
-.events{
+.events {
 	display: flex;
 	flex-direction: row;
 	width: 75vw;
-	height: 400px;
+	height: 425px;
 	margin: 0% auto;
 	justify-content: center;
 }
 
-.event-card{
+.event-card {
 	width: 33%;
 	height: 100%;
 	display: flex;
@@ -18,19 +18,20 @@
 	transition: all 500ms ease-out;
 }
 
-.event-card-scrolled{
+.event-card-scrolled {
 	transform: translateY(0px);
 	visibility: visible;
 	opacity: 1;
 }
 
-.event-card-left{
+.event-card-left {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 }
-.event-date{
+
+.event-date {
 	font-family: 'Big Shoulders Text', cursive;
 	display: flex;
 	font-size: 1.25em;
@@ -38,16 +39,19 @@
 	padding: 0px 1em;
 	align-items: center;
 }
-.date{
+
+.date {
 	font-size: 2.5em;
 	color: orange;
 }
-.month{
+
+.month {
 	text-transform: uppercase;
 	color: white;
 	font-size: 1.5em;
 }
-.line{
+
+.line {
 	height: 1px;
 	width: 100%;
 	border-top: 2px dashed white;
@@ -55,12 +59,12 @@
 	margin: 1px;
 }
 
-.event-card-right{
+.event-card-right {
 	height: 100%;
 	padding: 0.5em;
 }
 
-.card-right{
+.card-right {
 	position: relative;
 	height: 100%;
 	overflow: hidden;
@@ -68,12 +72,16 @@
 	border-radius: 15px;
 }
 
-.event-img{
+.event-img {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
 	opacity: 0.3;
 	width: 100%;
 }
 
-.event-body{
+.event-body {
 	color: white;
 	position: absolute;
 	z-index: 10;
@@ -88,7 +96,8 @@
 	visibility: visible;
 	transition: all ease-in-out 250ms;
 }
-.event-details{
+
+.event-details {
 	font-family: 'Josefin Sans', sans-serif;
 	letter-spacing: 0.1em;
 	display: flex;
@@ -97,7 +106,8 @@
 	padding: 1em;
 	text-transform: uppercase;
 }
-.event-name{
+
+.event-name {
 	font-family: 'Notable', sans-serif;
 	word-spacing: 0.1em;
 	text-align: end;
@@ -105,7 +115,7 @@
 	font-size: 1.5em;
 }
 
-.event-register{
+.event-register {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -119,7 +129,7 @@
 	transition: all ease-in-out 250ms;
 }
 
-.event-register-btn{
+.event-register-btn {
 	text-decoration: none;
 	color: white;
 	font-size: 1.75em;
@@ -131,68 +141,72 @@
 	transition: transform 250ms cubic-bezier(0.31, 0.57, 0.13, 2.98);
 }
 
-.event-register-btn:hover{
+.event-register-btn:hover {
 	background-color: orangered;
 	transform: scale(1.2);
 }
 
-.card-right:hover .event-register{
+.card-right:hover .event-register {
 	visibility: visible;
 	opacity: 1;
 }
-.card-right:hover .event-register + .event-body{
+
+.card-right:hover .event-register+.event-body {
 	visibility: hidden;
 	opacity: 0;
 }
 
-#event-1{
-	transform: translateY(-30px);
+#event-1 {
+	background-image: url("../img/standup19feb.jpg");
 }
 
-#event-2{
-	transform: translateY(-20px);
-}
+#event-2 {}
 
-#event-3{
-	transform: scale(1.75) translateY(10px);
-}
+#event-3 {}
 
-@media(max-width: 768px){
-	
-	.events{
+@media(max-width: 768px) {
+
+	.events {
 		font-size: 10px;
 		flex-direction: column;
 		height: 750px;
 	}
-	.event-card{
+
+	.event-card {
 		flex-direction: row;
 		width: 100%;
 		height: 250px;
 	}
-	.event-card-left{
+
+	.event-card-left {
 		flex-direction: column;
 	}
-	.event-card-right{
+
+	.event-card-right {
 		width: 100%;
 	}
-	.event-date{
+
+	.event-date {
 		order: -1;
 		position: sticky;
 		top: 80px;
 		background-color: var(--back-col);
 		z-index: 10;
 	}
-	.line{
+
+	.line {
 		height: 100%;
 		width: 0.1px;
 		border-left: 2px dashed white;
 		border-top: 0px;
 	}
-	#event-1, #event-2{
+
+	#event-1,
+	#event-2 {
 		transform: translateY(10px) scale(1.5);
 	}
-	#event-3{
+
+	#event-3 {
 		transform: translateY(35px) scale(2.5);
 	}
 }
-
